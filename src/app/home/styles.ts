@@ -51,7 +51,7 @@ export const StyledContainerImages = styled.div`
   align-items: center;
   justify-content: center;
   background-color: black;
-  margin-top: 2rem;
+  margin-top: 1rem;
   
 
   @media (width > 600px) {
@@ -61,8 +61,8 @@ export const StyledContainerImages = styled.div`
 `;
 
 export const StyledImagePost = styled.img<StyledImagePostProps>`
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 
   @media(width > 600px) {
     width: 500px;
