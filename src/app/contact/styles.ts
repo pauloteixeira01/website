@@ -11,13 +11,13 @@ export const StyledContainer = styled.div`
 export const StyledContent = styled.div`
   width: 95%;
   height: 40vh;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
   background-color: black;
-  margin-top: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 2rem;
 
   @media (width > 600px) {
