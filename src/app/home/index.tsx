@@ -7,21 +7,20 @@ import {
   StyledDescription,
   StyledContainerImages,
   StyledImagePost,
-  StyledLinkPost,
+  // StyledLinkPost,
 } from './styles'
 
 export default function Home() {
   return (
-    <StyledContainer>    
+    <StyledContainer>   
       <StyledInfos>
         <StyledTitle>Hey!</StyledTitle>
         <StyledDescription>
-          Welcome to my website.
-          Here you find posts talk about technology.
+          Welcome to my website. Here you find posts talk about technology.
         </StyledDescription>
       </StyledInfos>
       <StyledContainerImages>
-        <StyledImagePost src='/images/b.gif' alt="code woman" />
+        <StyledImagePost src='/images/woman.gif' alt="code woman" />
       </StyledContainerImages>
       {/* <StyledContainerImages> */}
         {/* <StyledLinkPost href='programming-logic'> */}
@@ -30,16 +29,17 @@ export default function Home() {
 
         {/* <StyledLinkPost href=''>
           <StyledImagePost src='/images/ia.jpg' alt="Artificial Intelligence"  />
-        </StyledLinkPost>
-
-        <StyledLinkPost href=''>
+          </StyledLinkPost>
+          
+          <StyledLinkPost href=''>
           <StyledImagePost src='/images/cyberpunk.jpg' alt="Cyberpunk"  />
-        </StyledLinkPost>
-
-        <StyledLinkPost href=''>
+          </StyledLinkPost>
+          
+          <StyledLinkPost href=''>
           <StyledImagePost src='/images/cypherpunk.jpg' alt="Cypherpunk"  />
         </StyledLinkPost> */}
       {/* </StyledContainerImages> */}
-    </StyledContainer>
+      </StyledContainer>
+    
   )
 }

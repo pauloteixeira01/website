@@ -8,16 +8,15 @@ interface StyledImagePostProps {
 
 export const StyledContainer = styled.div`
   display: flex;
+  align-items: center;
   width: 100%;
-  height: 100vh;
-  justify-content: space-around;
+  height: 90vh;
   align-items: center;
   flex-direction: column;
 `;
 
 export const StyledInfos = styled.div`
   display: flex;
-  flex: 1;
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
@@ -36,8 +35,10 @@ export const StyledTitle = styled.h1`
 export const StyledDescription = styled.span`
   color: white;
   font-size: 18px;
-  text-align: center;
   margin-top: 1rem;
+  padding: 2rem;
+  background-color: black;
+  border-radius: 2rem;
 
   @media (width > 600px) {
     font-size: 20px;
@@ -47,24 +48,25 @@ export const StyledDescription = styled.span`
 export const StyledContainerImages = styled.div`
   width: 100%;
   display: flex;
-  flex: 4;
   align-items: center;
   justify-content: center;
   background-color: black;
+  margin-top: 6rem;
+  
 
   @media (width > 600px) {
-    width: 20%;
+    width: 30%;
     border-radius: 2rem;
   }
 `;
 
 export const StyledImagePost = styled.img<StyledImagePostProps>`
-  width: 25rem;
-  height: 25rem;
+  width: 300px;
+  height: 300px;
 
   @media(width > 600px) {
-    width: 30rem;
-    height: 30rem;
+    width: 500px;
+    height: 500px;
   }
 `;
 
@@ -72,11 +74,11 @@ export const StyledImagePost = styled.img<StyledImagePostProps>`
 
 
 
-export const StyledLinkPost = styled(Link)`
-  text-decoration: none;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem 0rem;
-`;
+// export const StyledLinkPost = styled(Link)`
+//   text-decoration: none;
+//   color: white;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin: 1rem 0rem;
+// `;
