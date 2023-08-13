@@ -10,7 +10,7 @@ export const StyledContainer = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   align-items: center;
   flex-direction: column;
 `;
