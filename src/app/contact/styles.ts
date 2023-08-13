@@ -10,7 +10,7 @@ export const StyledContainer = styled.div`
 
 export const StyledContent = styled.div`
   width: 90%;
-  height: 30vh;
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
