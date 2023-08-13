@@ -51,7 +51,7 @@ export const StyledContainerImages = styled.div`
   align-items: center;
   justify-content: center;
   background-color: black;
-  margin-top: 6rem;
+  margin-top: 2rem;
   
 
   @media (width > 600px) {
