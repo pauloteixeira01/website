@@ -9,7 +9,7 @@ export const StyledContainer = styled.div`
 `;
 
 export const StyledContent = styled.div`
-  width: 95%;
+  width: 90%;
   height: 40vh;
   margin-top: 2rem;
   display: flex;
