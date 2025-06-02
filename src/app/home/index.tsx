@@ -1,18 +1,17 @@
-'use client'
+"use client";
 
-import { 
-  StyledContainer, 
-  StyledInfos, 
+import {
+  StyledContainer,
+  StyledInfos,
   StyledTitle,
   StyledDescription,
   StyledContainerImages,
   StyledImagePost,
-  // StyledLinkPost,
-} from './styles'
+} from "./styles";
 
 export default function Home() {
   return (
-    <StyledContainer>   
+    <StyledContainer>
       <StyledInfos>
         <StyledTitle>Hey!</StyledTitle>
         <StyledDescription>
@@ -20,26 +19,8 @@ export default function Home() {
         </StyledDescription>
       </StyledInfos>
       <StyledContainerImages>
-        <StyledImagePost src='/images/woman.gif' alt="code woman" />
+        <StyledImagePost src="/images/woman.gif" alt="code woman" />
       </StyledContainerImages>
-      {/* <StyledContainerImages> */}
-        {/* <StyledLinkPost href='programming-logic'> */}
-          {/* <span>Cyberpunk</span> */}
-        {/* </StyledLinkPost> */}
-
-        {/* <StyledLinkPost href=''>
-          <StyledImagePost src='/images/ia.jpg' alt="Artificial Intelligence"  />
-          </StyledLinkPost>
-          
-          <StyledLinkPost href=''>
-          <StyledImagePost src='/images/cyberpunk.jpg' alt="Cyberpunk"  />
-          </StyledLinkPost>
-          
-          <StyledLinkPost href=''>
-          <StyledImagePost src='/images/cypherpunk.jpg' alt="Cypherpunk"  />
-        </StyledLinkPost> */}
-      {/* </StyledContainerImages> */}
-      </StyledContainer>
-    
-  )
+    </StyledContainer>
+  );
 }

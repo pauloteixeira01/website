@@ -1,10 +1,4 @@
 import styled from "styled-components";
-import Link from 'next/link'
-
-interface StyledImagePostProps {
-  src: string;
-  alt: string;
-}
 
 export const StyledContainer = styled.div`
   display: flex;
@@ -25,7 +19,7 @@ export const StyledInfos = styled.div`
 
 export const StyledTitle = styled.h1`
   font-size: 24px;
-  color: #00FF00;
+  color: #00ff00;
 
   @media (width > 600px) {
     font-size: 26px;
@@ -52,7 +46,6 @@ export const StyledContainerImages = styled.div`
   justify-content: center;
   background-color: black;
   margin-top: 1rem;
-  
 
   @media (width > 600px) {
     width: 30%;
@@ -60,25 +53,12 @@ export const StyledContainerImages = styled.div`
   }
 `;
 
-export const StyledImagePost = styled.img<StyledImagePostProps>`
+export const StyledImagePost = styled.img`
   width: 250px;
   height: 250px;
 
-  @media(width > 600px) {
+  @media (width > 600px) {
     width: 500px;
     height: 500px;
   }
 `;
-
-
-
-
-
-// export const StyledLinkPost = styled(Link)`
-//   text-decoration: none;
-//   color: white;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   margin: 1rem 0rem;
-// `;
