@@ -103,8 +103,9 @@ export default function Project() {
   }, []);
 
   return (
-    <div className='flex items-center justify-center h-[calc(100vh-100px)]'>
-      <div className='flex justify-center items-center w-[1120px] h-full p-5 max-[600px]:p-[5px]'>
+    <div className='w-full flex flex-col items-center justify-center pt-28'>
+      <h1 className='text-2xl text-[#00ff00] sm:text-[26px]'>Projects</h1>
+      <div className='flex justify-center items-center h-full p-5 max-[600px]:p-[5px]'>
         <ul className='overflow-x-auto h-full scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200 rounded-lg'>
           {itemsApi.map((item) => (
             <li

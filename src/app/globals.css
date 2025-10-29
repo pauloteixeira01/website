@@ -35,3 +35,8 @@ body {
   border-radius: 10px;
   background-color: darkgray;
 }
+
+html,
+body {
+  overscroll-behavior: contain;
+}
