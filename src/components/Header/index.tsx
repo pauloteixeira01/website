@@ -25,14 +25,11 @@ export default function Header() {
       : "";
 
   return (
-    <header className='fixed top-0 left-0 right-0 z-50 bg-[#0b0b0b]/90 backdrop-blur-sm shadow-[0_1px_0_0_rgba(255,255,255,0.1)]'>
-      <div className='w-full flex items-center justify-between px-8 py-3 lg:w-2/3 sm:px-0 mx-auto relative'>
-        {/* === Título === */}
-        <div className='flex flex-col leading-none'>
-          <h1 className='text-2xl sm:text-3xl'>Paulo Teixeira</h1>
-          <span className='text-[#00ff00] text-sm sm:text-base'>
-            Software Engineer
-          </span>
+    <header className='h-24 flex items-center justify-center border-b-2 relative'>
+      <div className='w-full h-full flex items-center justify-between px-8 lg:w-2/3 sm:px-0'>
+        <div className='flex flex-col'>
+          <h1 className='text-3xl'>Paulo Teixeira</h1>
+          <span className='text-[#00ff00]'>Software Engineer</span>
         </div>
 
         {/* === Botão menu (mobile) === */}
