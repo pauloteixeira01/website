@@ -24,3 +24,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Estilo customizado pro scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: darkgray;
+}

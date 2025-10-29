@@ -1,0 +1,128 @@
+// "use client";
+
+// import React, { useEffect, useState } from "react";
+
+// import {
+//   Container,
+//   Content,
+//   Ul,
+//   Li,
+//   TitleProject,
+//   Url,
+//   Created_at,
+// } from "./styles";
+
+// interface ItemsApiProps {
+//   id: number;
+//   name: string;
+//   url: string;
+//   created_at: string;
+// }
+
+// export default function Project() {
+//   const [itemsApi, setItemsApi] = useState<ItemsApiProps[]>([]);
+
+//   useEffect(() => {
+//     const abortController = new AbortController();
+
+//     function getGitHubAPI() {
+//       fetch("https://api.github.com/users/pauloteixeira01/repos")
+//         .then(async (res) => {
+//           if (!res.ok) {
+//             throw new Error(`Failure with status: ${res.status}`);
+//           }
+//           const data = await res.json();
+//           setItemsApi(data);
+//         })
+//         .catch((e) => console.log(e));
+//     }
+
+//     getGitHubAPI();
+
+//     return () => abortController.abort();
+//   }, []);
+
+//   return (
+//     <Container>
+//       <Content>
+//         <Ul>
+//           {itemsApi.map((item) => (
+//             <Li key={item.id}>
+//               <TitleProject>{item.name.toUpperCase()}</TitleProject>
+//               <Url>URL: {item.url}</Url>
+//               <Created_at>
+//                 Data Criação:{" "}
+//                 {Intl.DateTimeFormat("pt-BR").format(new Date(item.created_at))}
+//               </Created_at>
+//             </Li>
+//           ))}
+//         </Ul>
+//       </Content>
+//     </Container>
+//   );
+// }
+
+"use client";
+
+import React, { useEffect, useState } from "react";
+
+interface ItemsApiProps {
+  id: number;
+  name: string;
+  url: string;
+  created_at: string;
+}
+
+export default function Project() {
+  const [itemsApi, setItemsApi] = useState<ItemsApiProps[]>([]);
+
+  useEffect(() => {
+    const abortController = new AbortController();
+
+    async function getGitHubAPI() {
+      try {
+        const res = await fetch(
+          "https://api.github.com/users/pauloteixeira01/repos",
+          {
+            signal: abortController.signal,
+          }
+        );
+        if (!res.ok) throw new Error(`Failure with status: ${res.status}`);
+        const data = await res.json();
+        setItemsApi(data);
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      } catch (e: any) {
+        if (e.name === "AbortError") return; // ignora abortos normais
+        console.error(e);
+      }
+    }
+
+    getGitHubAPI();
+
+    return () => abortController.abort();
+  }, []);
+
+  return (
+    <div className='flex items-center justify-center h-[calc(100vh-100px)]'>
+      <div className='flex justify-center items-center w-[1120px] h-full p-5 max-[600px]:p-[5px]'>
+        <ul className='overflow-x-auto h-full scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200 rounded-lg'>
+          {itemsApi.map((item) => (
+            <li
+              key={item.id}
+              className='flex flex-col text-start break-words m-[10px] mb-5 gap-[5px] rounded-[10px] p-[10px] shadow-md shadow-gray-400 border border-gray-400 max-[760px]:text-[13px]'
+            >
+              <strong className='font-semibold text-lg'>
+                {item.name.toUpperCase()}
+              </strong>
+              <span className='text-sm break-words'>URL: {item.url}</span>
+              <span className='text-sm text-gray-500'>
+                Data Criação:{" "}
+                {Intl.DateTimeFormat("pt-BR").format(new Date(item.created_at))}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}
