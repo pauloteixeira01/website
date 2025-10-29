@@ -26,9 +26,8 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        {/* <body className='overflow-x-hidden h-lvh'> */}
-        <main className='flex flex-col items-center justify-center overflow-y-auto'>
-          <Header />
+        <Header />
+        <main className='flex flex-col items-center justify-center '>
           {children}
         </main>
       </body>

@@ -8,7 +8,7 @@ import ItemContact from "../../components/ItemContact";
 
 export default function Contact() {
   return (
-    <div className='w-full h-lvh flex flex-col items-center pt-14'>
+    <div className='w-full h-lvh flex flex-col items-center pt-28'>
       <h1 className='text-2xl text-[#00ff00] sm:text-[26px]'>Contacts</h1>
       <div className='w-[90%] min-[601px]:w-[20%] h-[40vh] mt-8 flex flex-col items-center justify-around bg-black p-4 rounded-[2rem]'>
         <ItemContact
