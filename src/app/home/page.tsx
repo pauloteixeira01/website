@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className='flex h-lvh flex-col items-center overflow-hidden px-4 gap-20'>
-      <div className='flex flex-col items-center gap-4 pt-28'>
+      <div className='flex flex-col items-center gap-4 pt-14'>
         <h1 className='text-2xl text-[#00ff00] sm:text-[26px]'>Hey!</h1>
 
         <span className='text-white text-lg p-8 bg-black rounded-4xl sm:text-xl text-center'>

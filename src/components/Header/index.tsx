@@ -25,7 +25,7 @@ export default function Header() {
       : "";
 
   return (
-    <header className='h-24 flex items-center justify-center border-b-2 relative'>
+    <header className='h-24 w-full flex items-center justify-center border-b-2 relative'>
       <div className='w-full h-full flex items-center justify-between px-8 lg:w-2/3 sm:px-0'>
         <div className='flex flex-col'>
           <h1 className='text-3xl'>Paulo Teixeira</h1>
