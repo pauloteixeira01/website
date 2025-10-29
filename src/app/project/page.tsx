@@ -1,67 +1,3 @@
-// "use client";
-
-// import React, { useEffect, useState } from "react";
-
-// import {
-//   Container,
-//   Content,
-//   Ul,
-//   Li,
-//   TitleProject,
-//   Url,
-//   Created_at,
-// } from "./styles";
-
-// interface ItemsApiProps {
-//   id: number;
-//   name: string;
-//   url: string;
-//   created_at: string;
-// }
-
-// export default function Project() {
-//   const [itemsApi, setItemsApi] = useState<ItemsApiProps[]>([]);
-
-//   useEffect(() => {
-//     const abortController = new AbortController();
-
-//     function getGitHubAPI() {
-//       fetch("https://api.github.com/users/pauloteixeira01/repos")
-//         .then(async (res) => {
-//           if (!res.ok) {
-//             throw new Error(`Failure with status: ${res.status}`);
-//           }
-//           const data = await res.json();
-//           setItemsApi(data);
-//         })
-//         .catch((e) => console.log(e));
-//     }
-
-//     getGitHubAPI();
-
-//     return () => abortController.abort();
-//   }, []);
-
-//   return (
-//     <Container>
-//       <Content>
-//         <Ul>
-//           {itemsApi.map((item) => (
-//             <Li key={item.id}>
-//               <TitleProject>{item.name.toUpperCase()}</TitleProject>
-//               <Url>URL: {item.url}</Url>
-//               <Created_at>
-//                 Data Criação:{" "}
-//                 {Intl.DateTimeFormat("pt-BR").format(new Date(item.created_at))}
-//               </Created_at>
-//             </Li>
-//           ))}
-//         </Ul>
-//       </Content>
-//     </Container>
-//   );
-// }
-
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -92,7 +28,7 @@ export default function Project() {
         setItemsApi(data);
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (e: any) {
-        if (e.name === "AbortError") return; // ignora abortos normais
+        if (e.name === "AbortError") return;
         console.error(e);
       }
     }
@@ -103,7 +39,7 @@ export default function Project() {
   }, []);
 
   return (
-    <div className='w-full flex flex-col items-center justify-center pt-14'>
+    <div className='w-full flex flex-col items-center justify-center pt-28'>
       <h1 className='text-2xl text-[#00ff00] sm:text-[26px]'>Projects</h1>
       <div className='flex justify-center items-center h-full p-5 max-[600px]:p-[5px]'>
         <ul className='overflow-x-auto h-full scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200 rounded-lg'>

@@ -25,8 +25,8 @@ export default function Header() {
       : "";
 
   return (
-    <header className='h-24 w-full flex items-center justify-center border-b-2 relative'>
-      <div className='w-full h-full flex items-center justify-between px-8 lg:w-2/3 sm:px-0'>
+    <header className='fixed inset-x-0 top-0 z-50 w-full justify-center items-center bg-[#0b0b0b] border-b-2 p-2'>
+      <div className='w-full h-full flex items-center justify-between pl-4 sm:justify-around'>
         <div className='flex flex-col'>
           <h1 className='text-3xl'>Paulo Teixeira</h1>
           <span className='text-[#00ff00]'>Software Engineer</span>
@@ -44,7 +44,7 @@ export default function Header() {
         </button>
 
         {/* === Navegação Desktop === */}
-        <nav id='site-nav' className='hidden max-[560px]:hidden sm:flex gap-5'>
+        <nav id='site-nav' className='hidden  sm:flex gap-5'>
           <Link
             href='/'
             className={`text-[#00ff00] no-underline text-[20px] transition sm:px-8 flex items-center ${isActive(
