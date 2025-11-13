@@ -22,12 +22,12 @@ export default function ItemContact({
         <Link
           href={href}
           target='_blank'
-          className='cursor-pointer no-underline hover:underline'
+          className='font-sharetech cursor-pointer no-underline hover:underline'
         >
           {LinkContact}
         </Link>
       ) : (
-        <p className=' text-start'>{LinkContact}</p>
+        <p className='font-sharetech text-start'>{LinkContact}</p>
       )}
     </div>
   );

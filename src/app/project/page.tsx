@@ -40,13 +40,22 @@ export default function Project() {
 
   return (
     <div className='w-full flex flex-col items-center justify-center pt-28'>
-      <h1 className='text-2xl text-[#00ff00] sm:text-[26px]'>Projects</h1>
-      <div className='flex justify-center items-center h-full p-5 max-[600px]:p-[5px]'>
+      <h1 className='contact-card text-2xl text-[#00ff00] sm:text-[26px]'>
+        Projects
+      </h1>
+      <div
+        className='flex justify-center items-center h-full p-5 max-[600px]:p-[5px] 
+        w-full min-[601px]:w-[20%] h-[80vh] mt-5 flex flex-col items-center justify-around
+        relative bg-black/90 px-4 py-4 border sm:rounded-[2.5rem] border-green-400/70
+        shadow-[0_0_20px_rgba(34,197,94,0.6),0_0_40px_rgba(56,189,248,0.3)]
+        tracking-[0.06em] mx-auto max-w-3xl sm:rounded-[3rem] px-10 py-10
+      '
+      >
         <ul className='overflow-x-auto h-full scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200 rounded-lg'>
           {itemsApi.map((item) => (
             <li
               key={item.id}
-              className='flex flex-col text-start break-words m-[10px] mb-5 gap-[5px] rounded-[10px] p-[10px] shadow-md shadow-gray-400 border border-gray-400 max-[760px]:text-[13px]'
+              className='font-sharetech flex flex-col text-start break-words m-[10px] mb-5 gap-[5px] rounded-[10px] p-[10px] shadow-md shadow-gray-400 border border-gray-400 max-[760px]:text-[13px]'
             >
               <strong className='font-semibold text-lg'>
                 {item.name.toUpperCase()}
