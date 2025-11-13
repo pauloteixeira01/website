@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className='flex h-lvh flex-col items-center overflow-hidden px-4 gap-20 w-full'>
+    <div className='flex h-lvh flex-col items-center justify-around overflow-hidden sm:px-4 w-full'>
       <div className='flex flex-col items-center gap-4 pt-28'>
         <h1 className='contact-card text-2xl text-[#00ff00] sm:text-[26px]'>
           Hey!
@@ -21,13 +21,23 @@ export default function Home() {
         </span>
       </div>
 
-      <div className='w-full flex items-center justify-center bg-black sm:w-2/5 rounded-4xl'>
+      <div
+        className='w-full
+          flex
+          justify-center
+          items-end            
+          bg-transparent       
+          sm:items-center      
+          sm:bg-black         
+          sm:w-2/5
+          sm:rounded-4xl'
+      >
         <Image
           src='/img/woman.gif'
           alt='code woman'
-          className='w-64 h-64 sm:w-96 sm:h-96'
-          width={384}
-          height={384}
+          className='w-60 max-w-xs h-auto sm:w-96 sm:h-96 sm:rounded-2xl'
+          width={100}
+          height={100}
           priority
         />
       </div>
