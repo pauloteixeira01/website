@@ -7,11 +7,11 @@ export default function Home() {
     <div className='flex h-lvh flex-col items-center justify-around overflow-hidden sm:px-4 w-full'>
       <div className='flex flex-col items-center gap-4 pt-28'>
         <h1 className='contact-card text-2xl text-[#00ff00] sm:text-[26px]'>
-          Hey!
+          Hello world
         </h1>
 
         <span
-          className='font-sharetech text-white text-lg p-8 bg-black rounded-4xl sm:text-xl text-center
+          className='font-sharetech text-white text-lg p-8 bg-black  sm:text-xl text-center
           border sm:rounded-[2.5rem] border-green-400/70
         shadow-[0_0_20px_rgba(34,197,94,0.6),0_0_40px_rgba(56,189,248,0.3)]
         tracking-[0.06em] mx-auto max-w-3xl sm:rounded-[3rem] px-10 py-10

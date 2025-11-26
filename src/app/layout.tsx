@@ -16,8 +16,8 @@ const shareTechMono = Share_Tech_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Robotics and AI",
-  description: "Some topics about technology, hacker and robotics.",
+  title: "My world!",
+  description: "Some topics about technology, computers, robotics and AI.",
 };
 
 export default function RootLayout({

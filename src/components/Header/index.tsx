@@ -62,6 +62,14 @@ export default function Header() {
             PROJECTS
           </Link>
           <Link
+            href='/articles'
+            className={`text-[#00ff00] no-underline text-[20px] transition sm:px-8 flex items-center ${isActive(
+              "project"
+            )}`}
+          >
+            ARTICLES
+          </Link>
+          <Link
             href='/contact'
             className={`text-[#00ff00] no-underline text-[20px] transition sm:px-8 flex items-center ${isActive(
               "contact"
@@ -101,6 +109,15 @@ export default function Header() {
           )}`}
         >
           PROJECTS
+        </Link>
+        <Link
+          href='/articles'
+          onClick={() => setOpen(false)}
+          className={`flex items-center justify-around text-[#00ff00] no-underline text-[20px] w-full h-[10vh] ${isActive(
+            "contact"
+          )}`}
+        >
+          ARTICLES
         </Link>
         <Link
           href='/contact'
