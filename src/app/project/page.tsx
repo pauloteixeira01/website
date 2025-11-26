@@ -51,7 +51,7 @@ export default function Project() {
         tracking-[0.06em] mx-auto max-w-3xl sm:rounded-[3rem] px-2 py-2 sm:py-4
       '
       >
-        <ul className='w-full overflow-x-auto h-full scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200 rounded-lg px-4 sm:px-0'>
+        <ul className='w-full overflow-x-auto h-full scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200 rounded-lg px-2 sm:px-0'>
           {itemsApi.map((item) => (
             <li
               key={item.id}
