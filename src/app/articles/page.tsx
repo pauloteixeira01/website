@@ -4,12 +4,10 @@ import Image from "next/image";
 
 export default function Article() {
   return (
-    <div className='flex h-lvh flex-col items-center justify-around overflow-hidden sm:px-4 w-full'>
+    <div className='flex h-lvh flex-col items-center justify-between overflow-hidden sm:px-4 w-full pt-28'>
       <h1 className='contact-card text-2xl text-[#00ff00] sm:text-[26px]'>
         Articles!
       </h1>
-
-      <p>Under construction</p>
 
       {/* <div
         className='w-full
@@ -23,11 +21,11 @@ export default function Article() {
                 sm:rounded-4xl'
       > */}
       <Image
-        src='/img/under-construction.jpg'
+        src='/img/under-construction.png'
         alt='building'
-        className='w-60'
-        width={100}
-        height={100}
+        className='w-full sm:w-lvh'
+        width={200}
+        height={200}
         priority
       />
       {/* </div> */}
