@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang='en' className={shareTechMono.variable}>
       <body className='font-orbitron'>
         <Header />
-        <main className='min-h-screen bg-[url("/img/bg.jpg")] bg-cover bg-center flex flex-col items-center justify-center '>
+        <main className='min-h-screen bg-[url("/img/bg.jpg")] bg-cover bg-center flex flex-col items-center justify-center'>
           {children}
         </main>
       </body>
