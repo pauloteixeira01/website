@@ -12,7 +12,7 @@ const inter = Inter({
 export default function ArticlesGrid() {
   return (
     <div
-      className={`${inter.className} w-full mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4`}
+      className={`${inter.className} w-full mt-4 grid gap-8 sm:grid-cols-2 lg:grid-cols-4`}
     >
       {articles.map((article) => (
         <Link
