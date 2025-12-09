@@ -1,13 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Inter } from "next/font/google";
 
 import { articles } from "./articles";
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
+import { inter } from "@/shared/fonts";
 
 export default function ArticlesGrid() {
   return (
