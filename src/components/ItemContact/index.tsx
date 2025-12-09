@@ -1,6 +1,8 @@
 import React, { ElementType } from "react";
 import Link from "next/link";
 
+import { inter } from "@/shared/fonts";
+
 interface ItemContactProps {
   IconFa: ElementType;
   LinkContact: string;
@@ -22,12 +24,14 @@ export default function ItemContact({
         <Link
           href={href}
           target='_blank'
-          className='font-sharetech cursor-pointer no-underline hover:underline'
+          className={`${inter.className} font-sharetech cursor-pointer no-underline hover:underline`}
         >
           {LinkContact}
         </Link>
       ) : (
-        <p className='font-sharetech text-start'>{LinkContact}</p>
+        <p className={`${inter.className} font-sharetech text-start`}>
+          {LinkContact}
+        </p>
       )}
     </div>
   );
