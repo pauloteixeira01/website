@@ -38,7 +38,7 @@ export default async function ArticlePage(props: {
       `}
     >
       <article className='w-full px-2 sm:px-10'>
-        <div className='relative w-full h-36 sm:h-50'>
+        <div className='relative w-full h-20 sm:h-44'>
           <Image
             src={article.image}
             alt={article.title}
