@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 
 import { articles } from "@/components/ArticlesGrid/articles";
 import FormatUsbDriveArticle from "../_content/FormatUsbDriveArticle";
+import WhatIsAComputer from "../_content/WhatIsAComputer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,6 +13,7 @@ const inter = Inter({
 
 const contentBySlug: Record<string, React.ComponentType> = {
   "format-usb-drive-using-terminal-debian-ubuntu": FormatUsbDriveArticle,
+  "what-is-a-computer": WhatIsAComputer,
 };
 
 export default async function ArticlePage(props: {
@@ -36,12 +38,12 @@ export default async function ArticlePage(props: {
       `}
     >
       <article className='w-full px-2 sm:px-10'>
-        <div className='relative w-full h-32 sm:h-80'>
+        <div className='relative w-full h-36 sm:h-50'>
           <Image
             src={article.image}
             alt={article.title}
             fill
-            className='object-cover opacity-80 group-hover:opacity-100 transition-opacity'
+            className='object-contain'
           />
           <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent' />
           <span className='absolute top-3 left-3 text-xs px-3 py-1 rounded-full bg-black/70 border border-green-400/60 text-green-400 font-semibold'>
