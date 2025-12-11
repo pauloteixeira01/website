@@ -31,6 +31,6 @@ export const articles = [
       "A concise explanation of the principles that define a computer — from information processing and algorithms to the logic that powers modern digital systems.",
     date: "2025-12-10",
     readingTime: "20 min",
-    image: "/img/computer.svg",
+    image: "/img/computers.svg",
   },
 ];
