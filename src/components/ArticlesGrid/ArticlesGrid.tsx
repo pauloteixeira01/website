@@ -18,6 +18,7 @@ export default function ArticlesGrid() {
           <article
             key={article.slug}
             className='
+            h-full
             group relative flex flex-col overflow-hidden
             rounded-3xl border border-green-500/30
             bg-black/80
